@@ -1,0 +1,46 @@
+# Common model configurations
+
+tiny:
+  # For quick testing (3M params)
+  d_model: 128
+  nhead: 4
+  num_layers: 2
+  dim_feedforward: 512
+  T: 4
+  max_seq_len: 256
+
+small:
+  # Small model for prototyping (13M params)
+  d_model: 256
+  nhead: 8
+  num_layers: 4
+  dim_feedforward: 1024
+  T: 4
+  max_seq_len: 512
+
+medium:
+  # GPT-2 small scale (125M params)
+  d_model: 768
+  nhead: 12
+  num_layers: 12
+  dim_feedforward: 3072
+  T: 4
+  max_seq_len: 1024
+
+large:
+  # GPT-2 medium scale (350M params)
+  d_model: 1024
+  nhead: 16
+  num_layers: 24
+  dim_feedforward: 4096
+  T: 4
+  max_seq_len: 1024
+
+xlarge:
+  # 1B+ scale
+  d_model: 1536
+  nhead: 16
+  num_layers: 24
+  dim_feedforward: 6144
+  T: 4
+  max_seq_len: 2048
